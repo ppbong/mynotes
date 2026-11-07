@@ -81,3 +81,20 @@ go build -o app-arm64 main.go
 mkdir my-go-project && cd my-go-project
 go mod init github.com/myrepo/my-go-project  # 将生成 go.mod 文件
 ```
+
+## 代理设置（模块下载失败或速度慢时）
+
+```bash
+# 查看
+go env
+go env GOPROXY
+
+# 启用模块（默认auto）
+go env -w GO111MODULE=on
+
+# 七牛镜像
+go env -w GOPROXY=https://goproxy.cn,direct
+
+# 阿里镜像
+go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
+```
