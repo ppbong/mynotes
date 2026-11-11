@@ -1,0 +1,14 @@
+# 编译产物
+/bin/
+*.exe
+*.test
+*.out
+
+# 测试覆盖率报告
+coverage.html
+coverage.out
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+.DS_Store
